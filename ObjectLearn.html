@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Array Concept</title>
+    <script>
+   var Car={
+       car_brand: "Tesla",
+       car_model: "Model123",
+       price: 35000,
+
+       teslaAutopiolet: function()
+       {
+          document.write("<h1>This is car auto piolet</h1>")
+
+       }
+
+   }
+   Car.teslaAutopiolet();
+   document.write("<h2>"+Car.car_brand+"</h1>");
+   document.write("<h2>"+Car.car_model+"</h1>");
+   document.write("<h2>"+Car.price+"</h1>");
+   
+
+
+
+
+   function Cars(car_brand,car_model,price)
+   {
+       this.car_brand= car_brand;
+       this.car_model= car_model;
+       this.price= price;
+
+       this.teslaAutopiolet1= function()
+       {
+           document.write("<h2>This car has auto pilot</h2>");
+       }
+   }
+
+   var c1= new Cars("Tesla","model 2",35000);
+   var c2= new Cars("hyundai","tejjid",89777);
+   c1.teslaAutopiolet1();
+
+   document.write("<h2>"+c)
+    
+    </script>
+
+</head>
+<body>
+
+</body>
+
+
+</html>
