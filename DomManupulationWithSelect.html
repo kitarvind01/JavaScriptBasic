@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>DomWithSelect</title>
+        <script>
+        function fn1()
+        {
+            var select=document.getElementById("selectBox");
+            confirm(select.options[select.selectedIndex].value);
+        }    
+        </script>
+
+    </head>
+    <body>
+        <select id="selectBox">
+             <option value="Delhi">Delhi</option>
+             <option value="Mumbai">Mumbai</option>
+             <option value="Jaipur">Jaipur</option>
+             <option value="Kolkata">Kolkata</option>
+             <option value="Chennai">Chennai</option>
+             <option value="Bangalore">Bangalore</option>
+        </select>
+        <br>
+        <button onclick="fn1()">Click me</button>
+    </body>
+</html>
