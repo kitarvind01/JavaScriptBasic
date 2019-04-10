@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>DOM HW</title>
+        <script>
+            function clickOnBtn(){
+        var txtVal=document.getElementById("text1").value;
+        var pwdVal= document.getElementById("pwd").value;
+        if(txtVal===pwdVal)
+        {
+            alert("Both matches");
+        }
+
+        else{
+            alert("Both not matches");
+        }
+            }
+        
+        </script>
+
+    </head>
+    <body>
+        <input  id="text1" placeholder="Enter UserName">
+        <br>
+        <br>
+        <input type="password" id="pwd" placeholder="password">
+        <br>
+        <br>
+        <button onclick="clickOnBtn()">Click me</button>
+
+
+
+    </body>
+</html>
