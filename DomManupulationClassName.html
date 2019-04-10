@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>DOM Paragraph Manupulation</title>
+        <script>
+            function changeStyling()
+            {
+                var para= document.getElementsByClassName("param");
+                for (var i=0;i<para.length;i++)
+                {
+                    para[i].style.backgroundColor="yellow";
+                }
+
+            }
+        
+        
+        </script>
+
+    </head>
+    <body>
+        <p class="param">This ia Arvind1</p>
+        <p>This ia Arvind2</p>
+        <p>This ia Arvind3</p>
+        <p class="param">This ia Arvind4</p>
+        <p>This ia Arvind5</p>
+        <p class="param">This ia Arvind6</p>
+        <button onclick="changeStyling()">click me</button>
+
+    </body>
+</html>
