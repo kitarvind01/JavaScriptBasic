@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Form tag</title>
+        <script>
+        function validate()
+        {
+            var userName= document.getElementById("txt");
+            var passWord= document.getElementById("pass");
+            if(userName.value.trim()=="" || passWord.value.trim()=="")
+            {
+                alert("Please Enter the User or password");
+                return false;
+            } 
+            else
+            {
+                true;
+            }
+        } 
+        </script>
+
+    </head>
+    <body>
+        <form onsubmit= "return validate()" action="message.html">
+           User Name <input id="txt" placeholder="Enter User name" type="text" required>
+            <br>
+            <br>
+            PassWord  <input id="pass" placeholder="Enter password" type="password" required>
+            <br><br>
+            <button  type="submit"> Submit</button>
+        </form>
+    </body>
+</html>
