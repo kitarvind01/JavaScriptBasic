@@ -8,7 +8,9 @@
             var passWord= document.getElementById("pass");
             if(userName.value.trim()=="")
             {
-                alert("Blank User Name");
+                //alert("Blank User Name");
+                userName.style.border= "solid 3px red";
+                document.getElementById("lbUser").style.visibility="visible";
                 return false;
             } 
             else if(passWord.value.trim()=="")
@@ -32,7 +34,8 @@
     <body>
         <form onsubmit= "return validate()" action="message.html">
            User Name <input id="txt" placeholder="Enter User name" type="text" required>
-            <br>
+           <label id="lbUser" style="color:red ;visibility:hidden;">invalid</label>
+           <br>
             <br>
             PassWord  <input id="pass" placeholder="Enter password" type="password" required>
             <br><br>
